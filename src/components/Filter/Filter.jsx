@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { filterContacts } from '../../actions/filterActions';
-
 import s from './Filter.module.css';
 
 const Filter = () => {

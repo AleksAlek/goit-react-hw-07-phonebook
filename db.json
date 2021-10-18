@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "id": "SsvJrYEMg",
+      "name": "Bob",
+      "number": "2222222222"
+    },
+    {
+      "id": "MOPOxy39Y",
+      "name": "John",
+      "number": "3333333333"
+    },
+    {
+      "id": "iO-YMAZBd",
+      "name": "Ben",
+      "number": "444444444"
+    },
+    {
+      "id": "tmGOkXNjj",
+      "name": "Robert",
+      "number": "11111111"
+    }
+  ]
+}

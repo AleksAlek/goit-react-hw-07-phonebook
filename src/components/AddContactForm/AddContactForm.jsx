@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
+import { useAddContactMutation } from '../../services/contactsSlice/contactsSlice';
 import s from './AddContactForm.module.css';
-import { addContact } from '../../actions/contactsActions';
 
 const initialState = {
   name: '',
@@ -12,8 +11,7 @@ const initialState = {
 
 const AddContactForm = ({ contacts }) => {
   const [contact, setContact] = useState(initialState);
-
-  const dispatch = useDispatch();
+  const [addContact] = useAddContactMutation();
 
   const handleContactData = e =>
     setContact({
@@ -38,7 +36,7 @@ const AddContactForm = ({ contacts }) => {
       number: contact.number,
     };
 
-    dispatch(addContact(newContact));
+    addContact(newContact);
     setContact({ name: '', number: '' });
   };
 
